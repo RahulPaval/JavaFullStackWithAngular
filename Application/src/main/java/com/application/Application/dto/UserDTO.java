@@ -1,19 +1,25 @@
 package com.application.Application.dto;
 
 import jakarta.annotation.Generated;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserDTO {
-    private Long id; // Added ID
+    private String id; // Added ID
     private String fullName;
     private String email;
     private String password;
     
-    public Long getId() {
+    public String getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getFullName() {
